@@ -10,5 +10,4 @@ Small GUI tool to convert your pictures into a colourful HTML
 
 == Thanks to
 
-
 Elena for calculating the MAGICK constant

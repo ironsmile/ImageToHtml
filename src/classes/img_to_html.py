@@ -68,7 +68,17 @@ class ImgToHTML(object):
         width = width if width != None else int((float(size_w)/size_h) * height)
         height = height if height != None else int((float(size_h)/size_w) * width)
         size_w, size_h = width, height
-        size_w = int(size_w * 1.7) # The MAGICK number! Don't ask!
+        #
+        # What is this MAGICK constant all about?
+        # For starters it is 1.7
+        # Why would you increase the image's width?
+        # That's because fonts' symbols are not as square as a pixel is.
+        # They are all rendered in a container. For fixed-width (aka monospace) fonts
+        # this container is the same size for all symbols.
+        # The problem is that the height of the symbol container tend to be 
+        # bigger than its width. That's what the MAGICK constant tries to cope with.
+        #
+        size_w = int(size_w * 1.7) 
         im = im.resize((size_w,size_h))
       
       imp = im.resize((256, 1))
