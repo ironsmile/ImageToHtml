@@ -1,0 +1,10 @@
+*.html
+tests/*
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.png
+*.PNG
+*.pyc
+
