@@ -1,0 +1,4 @@
+build/*
+dist/*
+img_to_html.spec
+
