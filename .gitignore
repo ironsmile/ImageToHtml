@@ -7,4 +7,5 @@ tests/*
 *.png
 *.PNG
 *.pyc
+*.spec
 
