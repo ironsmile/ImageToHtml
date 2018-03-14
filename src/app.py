@@ -134,7 +134,7 @@ class MainWindow(wx.Frame):
         try:
           fh = open(output_file, "w")
           fh.write(filestr)
-        except IOError, desc:
+        except IOError as desc:
           msg_txt, msg_title = "Could not save %s: %s" % (output_file, desc)
         else:
           msg_txt, msg_title = "file %s has been saved successfully!" % output_file, "Saved!"
