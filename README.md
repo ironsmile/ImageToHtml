@@ -12,6 +12,8 @@ Small GUI tool to convert your pictures into a colourful HTML
 
 ## Installation
 
+The easiest way is to grab an already built binary from the [releases page](releases) if there is one for your OS.
+
 To run this program from source you would need [pip](https://pip.pypa.io/). Just run:
 
 ```
